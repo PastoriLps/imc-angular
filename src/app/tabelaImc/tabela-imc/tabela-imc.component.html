@@ -1,0 +1,16 @@
+<table class="tabela">
+  <thead class="tabela__cabecalho">
+    <th class="tabela__cabecalho__conteudo">Nome</th>
+    <th class="tabela__cabecalho__conteudo">Altura</th>
+    <th class="tabela__cabecalho__conteudo">Peso</th>
+    <th class="tabela__cabecalho__conteudo">IMC</th>
+  </thead>
+  <tbody class="tabela__linha">
+    <tr *ngFor="let cadastro of cadastros">
+      <td class="tabela__conteudo"> {{ cadastro.nome }} </td>
+      <td class="tabela__conteudo"> {{ cadastro.altura }} </td>
+      <td class="tabela__conteudo"> {{ cadastro.peso }} </td>
+      <td class="tabela__conteudo"> {{ cadastro.imc.toFixed(2) }} </td>
+    </tr>
+  </tbody>
+</table>

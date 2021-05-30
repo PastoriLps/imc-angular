@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'imc';
+  cadastros: any[] = [];
+
+  cadastrar($event){
+    console.log($event);
+    const cadastro = {...$event}
+    this.cadastros.push(cadastro);
+  }
 }
