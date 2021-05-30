@@ -6,6 +6,18 @@
     <th class="tabela__cabecalho__conteudo">IMC</th>
   </thead>
   <tbody class="tabela__linha">
+    <tr>
+      <td class="tabela__conteudo"> Pedro </td>
+      <td class="tabela__conteudo"> 1.75 </td>
+      <td class="tabela__conteudo"> 70 </td>
+      <td class="tabela__conteudo"> 22.85 </td>
+    </tr>
+    <tr>
+      <td class="tabela__conteudo"> Claudia</td>
+      <td class="tabela__conteudo"> 1.67 </td>
+      <td class="tabela__conteudo"> 55 </td>
+      <td class="tabela__conteudo"> 19.72 </td>
+    </tr>
     <tr *ngFor="let cadastro of cadastros">
       <td class="tabela__conteudo"> {{ cadastro.nome }} </td>
       <td class="tabela__conteudo"> {{ cadastro.altura }} </td>
